@@ -11,3 +11,68 @@
 
 # real_len('Alex\nKdfe23\t\f\v.\r')
 
+# def is_check_name(fullname: str, first_name):
+#     return fullname.startswith(first_name)
+
+# print(is_check_name('Alex Old', 'Alex'))
+
+# def sanitize_phone_number(phone):
+#     new_phone = (
+#         phone.strip()
+#         .removeprefix("+")
+#         .replace("(", "")
+#         .replace(")", "")
+#         .replace("-", "")
+#         .replace(" ", "")
+#     )
+#     return new_phone
+
+
+# def get_phone_numbers_for_countries(list_phones):
+#     clear_phones = []
+#     phone_list = {
+#     "UA": [],
+#     "JP": [],
+#     "TW": [],
+#     "SG": []
+#     }
+
+#     for phone in list_phones:
+#         clear_phones.append(sanitize_phone_number(phone))
+
+#     for phone in clear_phones:
+#         if phone.startswith("81"):
+#             phone_list["JP"].append(phone)
+#         elif phone.startswith("65"):
+#             phone_list["SG"].append(phone)
+#         elif phone.startswith("886"):
+#             phone_list["TW"].append(phone)
+#         else:
+#             phone_list["UA"].append(phone)
+    
+#     return phone_list
+
+
+# CYRILLIC_SYMBOLS = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяєіїґ"
+# TRANSLATION = ("a", "b", "v", "g", "d", "e", "e", "j", "z", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u",
+#                "f", "h", "ts", "ch", "sh", "sch", "", "y", "", "e", "yu", "ya", "je", "i", "ji", "g")
+
+# TRANS = {}
+# for c, l in zip(CYRILLIC_SYMBOLS, TRANSLATION):
+#     TRANS[ord(c)] = l
+#     TRANS[ord(c.upper())] = l.upper()
+# # print(TRANS)
+
+# def translate(name: str):
+#     transcript = name.translate(TRANS)
+#     return transcript
+
+# print(translate("Дмитро Короб"))
+
+grades = {"A": 5, "B": 5, "C": 4, "D": 3, "E": 3, "FX": 2, "F": 1}
+
+
+def formatted_grades(students: dict):
+    for i in students:
+        return f"{i.index():<4}|
+        {}"
