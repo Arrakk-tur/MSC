@@ -1,3 +1,4 @@
+#  --- 5.1---
 # def real_len(text: str):
 #     n_text = text
 #     spec = ["\n", "\f", "\r", "\t", "\v"]
@@ -11,6 +12,8 @@
 
 # real_len('Alex\nKdfe23\t\f\v.\r')
 
+
+#  --- 5.2---
 # def is_check_name(fullname: str, first_name):
 #     return fullname.startswith(first_name)
 
@@ -27,7 +30,7 @@
 #     )
 #     return new_phone
 
-
+#  --- 5.3---
 # def get_phone_numbers_for_countries(list_phones):
 #     clear_phones = []
 #     phone_list = {
@@ -52,7 +55,7 @@
     
 #     return phone_list
 
-
+#  --- 5.4---
 # CYRILLIC_SYMBOLS = "абвгдеёжзийклмнопрстуфхцчшщъыьэюяєіїґ"
 # TRANSLATION = ("a", "b", "v", "g", "d", "e", "e", "j", "z", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u",
 #                "f", "h", "ts", "ch", "sh", "sch", "", "y", "", "e", "yu", "ya", "je", "i", "ji", "g")
@@ -68,7 +71,7 @@
 #     return transcript
 
 # print(translate("Дмитро Короб"))
-
+#  --- 5.5---
 grades = {"A": 5, "B": 5, "C": 4, "D": 3, "E": 3, "FX": 2, "F": 1}
 # 
 # 
@@ -88,13 +91,14 @@ grades = {"A": 5, "B": 5, "C": 4, "D": 3, "E": 3, "FX": 2, "F": 1}
 # studen = {"Nick": "A", "Olga": "B", "Mike": "FX", "Anna": "C"}
 # print(formatted_grades(studen))
 
-# 
+#  --- 5.6---
 # def formatted_numbers():
 #     res = [f"|{'decimal':^10}|{'hex':^10}|{'binary':^10}|"]
 #     for i in range(16):
 #         res.append(f"|{i:<10d}|{i:^10x}|{i:>10b}|")
 #     return res
 
+#  --- 5.7---
 # import re
 #
 #
@@ -114,9 +118,20 @@ grades = {"A": 5, "B": 5, "C": 4, "D": 3, "E": 3, "FX": 2, "F": 1}
 #     "Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0.",
 #     "Python"))
 
-
+#  --- 5.9---
 # import re
 # 
 # 
 # def find_all_words(text, word):
 #     return re.findall(word, text, re.IGNORECASE)
+
+#  --- 5.10---
+# import re
+# 
+# 
+# def replace_spam_words(text, spam_words):
+#     res = text
+#     aster = "*"
+#     for word in spam_words:
+#         res = re.sub(word, f"{aster * len(word)}", res, flags=re.IGNORECASE)
+#     return res
