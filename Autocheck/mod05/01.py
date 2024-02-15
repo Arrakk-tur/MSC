@@ -70,9 +70,20 @@
 # print(translate("Дмитро Короб"))
 
 grades = {"A": 5, "B": 5, "C": 4, "D": 3, "E": 3, "FX": 2, "F": 1}
-
-
-def formatted_grades(students: dict):
-    for i in students:
-        return f"{i.index():<4}|
-        {}"
+# 
+# 
+# def formatted_grades(students: dict):
+#     res = []
+#     index = 0
+#     for key, value in students.items():
+#         index += 1
+#         for g_key, g_val in grades.items():
+#             if value == g_key:
+#                 num_drade = g_val
+# 
+#         res.append(f"{index:>4}|{key:<10}|{value:^5}|{num_drade:^5}")
+#     return res
+# 
+# 
+# studen = {"Nick": "A", "Olga": "B", "Mike": "FX", "Anna": "C"}
+# print(formatted_grades(studen))
