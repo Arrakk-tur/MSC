@@ -95,3 +95,21 @@ grades = {"A": 5, "B": 5, "C": 4, "D": 3, "E": 3, "FX": 2, "F": 1}
 #         res.append(f"|{i:<10d}|{i:^10x}|{i:>10b}|")
 #     return res
 
+# import re
+#
+#
+# def find_word(text, word):
+#     result = re.search(word, text)
+#     res = {
+#         'result': (True if result is not None else False),
+#         'first_index': (result.span()[0] if result is not None else None),
+#         'last_index': (result.span()[1] if result is not None else None),
+#         'search_string': word,
+#         'string': text
+#     }
+#
+#     return res
+#
+# print(find_word(
+#     "Guido van Rossum began working on Python in the late 1980s, as a successor to the ABC programming language, and first released it in 1991 as Python 0.9.0.",
+#     "Python"))
