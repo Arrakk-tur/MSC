@@ -87,3 +87,11 @@ grades = {"A": 5, "B": 5, "C": 4, "D": 3, "E": 3, "FX": 2, "F": 1}
 # 
 # studen = {"Nick": "A", "Olga": "B", "Mike": "FX", "Anna": "C"}
 # print(formatted_grades(studen))
+
+# 
+# def formatted_numbers():
+#     res = [f"|{'decimal':^10}|{'hex':^10}|{'binary':^10}|"]
+#     for i in range(16):
+#         res.append(f"|{i:<10d}|{i:^10x}|{i:>10b}|")
+#     return res
+
