@@ -44,19 +44,22 @@
 
 # --- 7.4 ---
 
-def data_preparation(list_data: list):
-    fin_l = []
-    m_f = []
-    for el in list_data:
-        while len(el) > 2:
-            el.remove(min(el))
-            el.remove(max(el))
-        else:
-            fin_l.extend(el)
+# def data_preparation(list_data):
+#     fin_l = []
+#     for el in list_data:
+#         if len(el) <= 2:
+#             fin_l.extend(el)
+#         else:
+#             el.remove(min(el))
+#             el.remove(max(el))
+#             fin_l.extend(el)
 
-    m_f = fin_l.sort(reverse=True)
-    return m_f
+#     return sorted(fin_l, reverse=True)
+
+# # ml = [[1, 2, 3], [3, 4], [5, 6]]
+# ml = [[1, 2, 3, 0], [3], [5, 6, 1, 7, 2]]
+# print(data_preparation(ml))
 
 
-ml = [[1, 2, 3], [3, 4], [5, 6]]
-print(data_preparation(ml))
+# --- 7.5 ---
+
