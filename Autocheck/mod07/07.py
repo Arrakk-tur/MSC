@@ -63,3 +63,15 @@
 
 # --- 7.5 ---
 
+def all_sub_lists(data: list):
+    fin_list = [[]]
+    step = 1
+    while step != len(data):
+        for i in range(0, len(data)):
+            fin_list.append(data[i:step])
+        step += 1
+    
+    return fin_list
+
+l = [4, 6, 1, 3]
+print(all_sub_lists(l))
