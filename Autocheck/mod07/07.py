@@ -100,3 +100,21 @@
 #     with open(path, "r") as f_r:
 #         f_r.seek(start_pos)
 #         return f_r.read(count_chars)
+
+# --- 7.8 ---
+
+def get_employees_by_profession(path, profession):
+    rjadok = ""
+    spysok = []
+    with open(path, 'r') as f:
+        lines = f.readlines()
+    for line in lines:
+        if line.find(profession):
+            spysok.append(line.replace(profession, "").strip())
+    rjadok = " ".join(spysok)
+
+    return rjadok
+
+file = ['John courier\n', 'Pipe doc\n', 'Dan courier\n']
+
+# Функція працює неправильно. Необхідно повернути строку з імен через пробіл, ви повернули: 'John Pipe doc Dan'
