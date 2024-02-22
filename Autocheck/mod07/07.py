@@ -63,15 +63,40 @@
 
 # --- 7.5 ---
 
-def all_sub_lists(data: list):
-    fin_list = [[]]
-    step = 1
-    while step != len(data):
-        for i in range(0, len(data)):
-            fin_list.append(data[i:step])
-        step += 1
-    
-    return fin_list
+# def all_sub_lists(data: list):
+#     n = len(data)
+#     fun_list = [[]]
+#     for i in range(n):
+#         for j in range(i+1, n+1):
+#             fun_list.append(data[i:j])
+#     return sorted(fun_list, key=len)
 
-l = [4, 6, 1, 3]
-print(all_sub_lists(l))
+# l = [4, 6, 1, 3]
+# print(all_sub_lists(l))
+
+# --- 7.6 ---
+
+# def make_request(keys: list, values: list):
+#     fin_dict = {}
+#     if len(keys) != len(values):
+#         return fin_dict
+#     else:
+#         for i in keys:
+#             ind_i = keys.index(i)
+#             fin_dict[i] = values[ind_i]
+#     return fin_dict
+#
+#
+# k = ['name', 'age', 'email']
+# v = ['Nick', '23', 'nick@test.com']
+# print(make_request(k, v))
+
+# --- 7.7 ---
+
+# def file_operations(path, additional_info, start_pos, count_chars):
+#     with open(path, "a") as f_w:
+#         f_w.write(additional_info)
+#
+#     with open(path, "r") as f_r:
+#         f_r.seek(start_pos)
+#         return f_r.read(count_chars)
