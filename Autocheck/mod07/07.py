@@ -103,18 +103,36 @@
 
 # --- 7.8 ---
 
-def get_employees_by_profession(path, profession):
-    rjadok = ""
-    spysok = []
-    with open(path, 'r') as f:
-        lines = f.readlines()
-    for line in lines:
-        if line.find(profession):
-            spysok.append(line.replace(profession, "").strip())
-    rjadok = " ".join(spysok)
+# def get_employees_by_profession(path, profession):
+#     # rjadok = ""
+#     spysok = []
+#     with open(path, 'r') as f:
+#         lines = f.readlines()
+#     for line in lines:
+#         # if line.find(profession):
+#         if profession in line:
+#             spysok.append(line.replace(profession, "").strip())
+#     rjadok = " ".join(spysok)
+#
+#     return rjadok
+#
+#
+# p = "worker.txt"
+# print(get_employees_by_profession(p, "courier"))
+# # file = ['John courier\n', 'Pipe doc\n', 'Dan courier\n']
+# # Функція працює неправильно. Необхідно повернути строку з імен через пробіл, ви повернули: 'John Pipe doc Dan'
 
-    return rjadok
+# --- 7.9 ---
 
-file = ['John courier\n', 'Pipe doc\n', 'Dan courier\n']
-
-# Функція працює неправильно. Необхідно повернути строку з імен через пробіл, ви повернули: 'John Pipe doc Dan'
+# def to_indexed(source_file, output_file):
+#     output_text = []
+#     with open(source_file, "r") as sf:
+#         source_text = sf.readlines()
+#     for line in source_text:
+#         output_text.append(f"{source_text.index(line)}: " + line)
+# 
+#     with open(output_file, "w") as of:
+#         of.writelines(output_text)
+# 
+# 
+# to_indexed("source_file", "output_file")
