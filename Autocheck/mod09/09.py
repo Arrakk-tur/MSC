@@ -65,25 +65,72 @@
 
 # --- 9.5 ---
 
-# class Animal:
-#     color = "white"
+#
+# def format_phone_number(func):
+#     def inner(phone):
+#         new_phone = (
+#             phone.strip()
+#             .removeprefix("+")
+#             .replace("(", "")
+#             .replace(")", "")
+#             .replace("-", "")
+#             .replace(" ", "")
+#         )
+#         return func(new_phone)
+#
+#     return inner
+#
+#
+# @format_phone_number
+# def sanitize_phone_number(phone):
+#     if len(phone) == 12:
+#         return "+" + phone
+#     elif len(phone) == 10:
+#         return "+38" + phone
+#     else:
+#         return phone
+#
+#
+# print(sanitize_phone_number(' +38(050)123-32-34'))
 
-#     def __init__(self, nickname, weight):
-#         self.nickname = nickname
-#         self.weight = weight
 
-#     def say(self):
-#         pass
+# --- 9.6 ---
 
-#     def change_weight(self, weight):
-#         self.weight = weight
+# def normal_name(list_name):
+#     return list(map(lambda i: i.capitalize(), list_name))
 
-#     def change_color(self, color):
-#         Animal.color = color
+# --- 9.7 ---
 
 
-# first_animal = Animal("m", 10)
-# second_animal = Animal("l", 13)
-# second_animal.change_color("red")
-# print(Animal.color)
-# print(first_animal.color)
+# def get_emails(list_contacts):
+#     return list(map(lambda i: i["email"], list_contacts))
+#
+#
+# n = [{
+#         "name": "Allen Raymond",
+#         "email": "nulla.ante@vestibul.co.uk",
+#         "phone": "(992) 914-3792",
+#         "favorite": False,
+#     }]
+# print(get_emails(n))
+
+
+# --- 9.8 ---
+#
+# def positive_values(list_payment):
+#     return list(filter(lambda i: i > 0, list_payment))
+
+
+# --- 9.9 ---
+#
+#
+# def get_favorites(contacts):
+#     return list(filter(lambda i: i["favorite"] is True, contacts))
+
+# --- 9.10 ---
+
+# from functools import reduce
+#
+#
+# def sum_numbers(numbers):
+#     return reduce(lambda x, y: x + y, numbers)
