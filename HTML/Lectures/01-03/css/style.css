@@ -1,0 +1,30 @@
+header {
+  background-color: lightblue;
+}
+section {
+  background-color: darkmagenta;
+}
+footer {
+  background-color: lightsalmon;
+}
+
+h3 {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.header-link {
+  color: black;
+}
+.footer-link {
+  color: white;
+}
+#home {
+  background-color: darkgray;
+}
+
+[class] {
+  color: black;
+}
