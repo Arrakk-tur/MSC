@@ -1,30 +1,41 @@
-header {
-  background-color: lightblue;
-}
-section {
-  background-color: darkmagenta;
-}
-footer {
-  background-color: lightsalmon;
+:root {
+  --primary-font: "Roboto";
+  --primary-cl: #111111;
+  --secondary-cl: #fafafa;
+  --light-cl: #fff;
+  --dark-cl: #1e1823;
+  --accent-cl: #fd9222;
 }
 
-h3 {
-  color: white;
+/* Region Base */
+body {
+  font-family: var(--primary-font), sans-serif;
+  background-color: #fafafa;
+  color: #111111;
+  font-size: 14px;
 }
+
+ul,
+ol {
+  list-style: none;
+}
+address {
+  font-style: normal;
+}
+
 a {
+  color: currentColor;
   text-decoration: none;
 }
 
-.header-link {
-  color: black;
-}
-.footer-link {
-  color: white;
-}
-#home {
-  background-color: darkgray;
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
 }
 
-[class] {
-  color: black;
+.logo {
+}
+
+.logo-accent {
 }
